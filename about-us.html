@@ -216,18 +216,18 @@
 
 <!-- ✅ Script to Call Netlify Function -->
 <script>
-  function getNetlifyLocation() {
-    fetch("https://netlify-cors-enabled.netlify.app/.netlify/functions/hello")
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById("result").innerText = data.message || "Success!";
-      })
-      .catch(() => {
-        document.getElementById("result").innerText = "Error calling Netlify function.";
-      });
-  }
+function getNetlifyLocation() {
+  fetch("https://cors-demo-vamsi.netlify.app/.netlify/functions/hello")
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("result").innerText = data.message || "Success!";
+    })
+    .catch((err) => {
+      console.error(err);
+      document.getElementById("result").innerText = "Error calling Netlify function.";
+    });
+}
 </script>
-
   
 </body>
 </html>
