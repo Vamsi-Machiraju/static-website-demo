@@ -217,13 +217,13 @@
 <!-- ✅ Script to Call Netlify Function -->
 <script>
 function getNetlifyLocation() {
-  fetch("https://cors-demo-vamsi.netlify.app/.netlify/functions/hello")
+  fetch("https://vamsi-cors-test.netlify.app/.netlify/functions/hello")
     .then(res => res.json())
     .then(data => {
       document.getElementById("result").innerText = data.message || "Success!";
     })
     .catch((err) => {
-      console.error(err);
+      console.error("Fetch error:", err);
       document.getElementById("result").innerText = "Error calling Netlify function.";
     });
 }
