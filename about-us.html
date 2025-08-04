@@ -179,7 +179,7 @@
 			<div class="section">
 			  <h2>Serverless Function Demo</h2>
 			  <button onclick="getNetlifyLocation()">Call Netlify Public Function</button>
-			  <p id="result">Waiting for Netlify response...</p>
+			  <p id="result">Wait for Netlify response...</p>
 			</div>
 
     </div>
@@ -215,18 +215,19 @@
 </div>
 
 <!-- ✅ Script to Call Netlify Function -->
-  <script>
-	function getNetlifyLocation() {
-	  fetch("https://public-netlify-fn-demo.netlify.app/.netlify/functions/hello")
-		.then(res => res.json())
-		.then(data => {
-		  document.getElementById("result").innerText = data.message || "Success!";
-		})
-		.catch(() => {
-		  document.getElementById("result").innerText = "Error calling Netlify function.";
-		});
-	}
-  </script>
+<script>
+  function getNetlifyLocation() {
+    fetch("https://netlify-cors-enabled.netlify.app/.netlify/functions/hello")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("result").innerText = data.message || "Success!";
+      })
+      .catch(() => {
+        document.getElementById("result").innerText = "Error calling Netlify function.";
+      });
+  }
+</script>
+
   
 </body>
 </html>
