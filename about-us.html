@@ -216,16 +216,16 @@
 
 <!-- ✅ Script to Call Netlify Function -->
   <script>
-    function getNetlifyLocation() {
-      fetch("https://netlify-serverless-demo.netlify.app/.netlify/functions/hello")
-        .then(res => res.json())
-        .then(data => {
-          document.getElementById("result").innerText = data.message || "Success!";
-        })
-        .catch(() => {
-          document.getElementById("result").innerText = "Error calling Netlify function.";
-        });
-    }
+	function getNetlifyLocation() {
+	  fetch("https://public-netlify-fn-demo.netlify.app/.netlify/functions/hello")
+		.then(res => res.json())
+		.then(data => {
+		  document.getElementById("result").innerText = data.message || "Success!";
+		})
+		.catch(() => {
+		  document.getElementById("result").innerText = "Error calling Netlify function.";
+		});
+	}
   </script>
   
 </body>
