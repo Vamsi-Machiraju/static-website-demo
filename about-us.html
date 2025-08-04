@@ -176,10 +176,11 @@
         </div>
 
 		<!-- ✅ Added Serverless Demo Section -->
+			
 			<div class="section">
-			  <h2>Serverless Function Demo</h2>
-			  <button onclick="getNetlifyLocation()">Call Netlify Public Function</button>
-			  <p id="result">Wait for Netlify response...</p>
+			  <h2>Serverless Function Demo (CORS Safe)</h2>
+			  <button onclick="getNetlifyLocation()">Get My Location</button>
+			  <p id="result">Waiting for response...</p>
 			</div>
 
     </div>
@@ -215,16 +216,18 @@
 </div>
 
 <!-- ✅ Script to Call Netlify Function -->
+
 <script>
 function getNetlifyLocation() {
-  fetch("https://vamsi-cors-test.netlify.app/.netlify/functions/hello")
+  fetch("https://ipapi.co/json/")
     .then(res => res.json())
     .then(data => {
-      document.getElementById("result").innerText = data.message || "Success!";
+      document.getElementById("result").innerText =
+        `${data.city}, ${data.region}, ${data.country_name}`;
     })
     .catch((err) => {
       console.error("Fetch error:", err);
-      document.getElementById("result").innerText = "Error calling Netlify function.";
+      document.getElementById("result").innerText = "Error calling API.";
     });
 }
 </script>
