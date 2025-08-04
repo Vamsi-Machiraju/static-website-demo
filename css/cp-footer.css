@@ -1,0 +1,77 @@
+.foot-flex-con{
+display: flex;
+flex-direction: row;
+align-items: center;
+background-color:var(--black-shade-blue);
+height:16vh;
+margin-top:var(--margin-md);
+}
+
+.foot-part1{
+display: flex;
+align-items: flex-start; /* Vertically centers content within each section */
+justify-content:center;	
+width: 50%; /* Adjust as needed */
+gap:var(--margin-lg);
+}
+
+.foot-part2{
+display: flex;
+align-items: flex-start; 
+justify-content:center;
+width: 50%; /* Adjust as needed */
+gap:var(--margin-lg);
+}
+
+.foot-part1-col{
+display: flex;
+flex-direction:column;
+align-items: center; /* Vertically centers content within each section */
+justify-content:flex-start;
+}
+
+.foot-part2-col{
+display: flex;
+flex-direction:column;
+align-items: flex-start; /* Vertically centers content within each section */
+justify-content:flex-start;
+}
+
+.foot-bottom-msg{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:flex-end;
+background-color:var(--black-shade-blue);
+height:14vh;
+margin-bottom: calc(-1 * var(--margin-lg));
+}
+
+.separator {
+color: var(--pure-white);
+padding-right:var(--padding-xxs); /* Add space to the right of the separator */
+}
+
+.foot-flex-con a, .foot-bottom-msg a { 
+color: var(--pure-white);
+}
+
+.foot-flex-con a:hover, .foot-bottom-msg a:hover {
+color: var(--hover-links-white); /* Make sure this is different from --pure-white for visibility */
+font-weight: var(--font-weight-semibold); 
+}
+
+.address-show {
+color: var(--white-opacity-70); 
+font-size: var(--font-size-small); 
+font-weight:var(--font-weight-normal); 
+font-family: var(--font-primary-roboto); 
+}
+
+.copy-right {
+color: var(--white-opacity-70); 
+font-size: var(--font-size-vsmall); 
+font-weight:var(--font-weight-normal); 
+font-family: var(--font-primary-roboto);
+margin-bottom:var(--margin-sm); 
+}

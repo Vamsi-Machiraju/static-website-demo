@@ -1,0 +1,107 @@
+/* Product Section */
+.product-section {
+background: #3B3B3B;
+color: white;
+padding: 30px 10%;
+text-align: center;
+border-radius: 15px;
+max-width: 900px;
+margin: auto;
+margin-bottom: 60px;
+}
+
+/* Section Heading */
+.section-heading {
+    font-size: 2.5rem;
+	font-weight: 700;
+    color: #00D5F9;
+    text-align: center;
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left: Product Description */
+.product-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Features List */
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.product-features li {
+    font-size: 1.2rem;
+    color: var(--white-opacity-70);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-features li strong {
+    color: cyan;
+}
+
+.product-text h3 {
+    font-size: 2rem;
+    color: #00D5F9;
+	font-weight: 750;
+}
+
+.product-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #00bcd4;
+    color: #121212;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+	 box-shadow: none; /* Remove pop effect */
+}
+
+.cta-button:hover {
+    background: #0097A7;
+}
+
+/* Right: Product Image */
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .product-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-text {
+        text-align: center;
+    }
+}

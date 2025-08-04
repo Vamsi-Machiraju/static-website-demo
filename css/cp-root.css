@@ -1,0 +1,180 @@
+:root {
+	/* Colors */
+    --pure-black: #000000;
+    --Charcoal-black:#333333;
+    --Jet-black:#222222;
+    --Smoky-black:#1A1A1A;
+    --Ash-black:#2B2B2B;
+    --blue-black:#0D0D1F;
+    --greenish-black:#1F0D0D;
+    --warm-black:#1F0D0D;
+	--vlighter-gray: #F5F5F3;
+	--lighter-gray: #ECECE8;
+	--light-gray: #E5E4E2;
+	--mlighter-gray: #D3D3D3;		
+    --dark-gray: #333333;
+    --pencil-gray:#3B3B3B;	
+	--pure-black-opacity: rgba(0, 0, 0, 0.40);
+	--pure-black-less-opacity: rgba(0, 0, 0, 0.58);
+    --black-semi-transparent: rgba(0, 0, 0, 0.9);
+    --black-muted-transparent: rgba(0, 0, 0, 0.8);
+	--brown-gray: #706d6d;
+	--pure-white: #FFFFFF;
+	--off-white:#fcfcfc;
+	--white-opacity-70: rgba(255, 255, 255, 0.70);	
+	--pure-pale-white: #F8F8FF;
+	--pure-smoke-white: #F5F5F5;
+	--pure-snow-white: #FFFAFA;
+	--default-blue: #007bff;
+	--gmail-light-blue:#e8f0fe;
+	--gmail-more-light-blue:#DCEBFF;
+	--gmail-next-more-light-blue:#CCE0FF;
+	--strong-blue: #1E6CAE;	
+	--strong-blue-with-black-shade: rgba(30, 108, 174, 1); 
+    --deep-gemstone-blue: #0F52BA;
+	--dark-shade-red:#D32F2F;
+	--bright-shade-red: #A31F34;
+	--green-shade-blue:#17a2b8;
+	--black-shade-blue:#0f203b;
+	--natural-yellow:#e5e83180;
+	  		
+    /* URL colors */
+    --links-pure-black: #000000;        
+    --links-dark-gray: #333333;
+	--links-default-blue: #007bff;        
+    --links-deep-gemstone-blue: #0F52BA;
+	
+	--hover-links-white: #e6e6e6;
+	--hover-links-for-black: #555555;        
+    --hover-links-for-dark-gray: #666666;
+	--hover-links-for-default-blue: #339bff;        
+    --hover-links-for-deep-gemstone-blue: #3173D4; 
+	
+	/* Button colors */
+	--butn-dark-gray: #333333;
+    --butn-light-gray: #E5E4E2;
+	--butn-natural-gray: #DADADA;
+	--butn-strong-blue: #1E6CAE;
+	--butn-gem-stone-blue: #0F52BA;
+	--butn-green-shade-blue: #17a2b8;
+	
+    --butn-text-for-dark-gray: #FFFFFF; /* white color */
+    --butn-text-for-light-gray: #333333; /* Dark gray */
+    --butn-text-for-natural-gray: #808080; /* Dark gray */
+    --butn-text-for-strong-blue: #FFFFFF; /* white color */
+    --butn-text-for-gem-stone-blue: #FFFFFF; /* white color */
+	--butn-text-for-green-shade-blue: #FFFFFF;
+   
+    --hover-butn-for-dark-gray: #4d4d4d; /* lighter gray */
+    --hover-butn-for-light-gray: #cccccc; /* A slightly darker gray */
+    --hover-butn-for-natural-gray: #bfbfbf; /* medium gray */
+    --hover-butn-for-strong-blue: #3691d9;  /*A slightly lighter shade of blue*/
+    --hover-butn-for-gem-stone-blue: #1a66d1; /* A vibrant blue*/
+	--hover-butn-for-green-shade-blue:#148a96; /* A vibrant blue*/
+		
+	  /* Font sizes for headers and paragrahps */
+    --font-size-base: 16px; /* Base font size for paragraphs */
+    --font-size-h1: 2.5rem; /* Font size for <h1> */
+    --font-size-h2: 2rem; /* Font size for <h2> */
+    --font-size-h3: 1.75rem; /* Font size for <h3> */
+    --font-size-h4: 1.5rem; /* Font size for <h4> */
+    --font-size-h5: 1.25rem; /* Font size for <h5> */
+    --font-size-h6: 1rem; /* Font size for <h6> */
+	--font-size-small: 0.9rem; /* Font size for <h6> */
+	--font-size-vsmall: 0.7rem; /* Font size for <h6> */
+	
+	/* Font colors */
+    --font-color-primary: #333333; /* Primary text color */
+    --font-color-secondary: #555555; /* Secondary text color (usually for less important text) */
+    --font-color-light: #ffffff; /* Light color for text on dark backgrounds */
+    --font-color-accent: #007bff; /* Accent color for links or important highlights */
+	
+	--font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Primary font family */
+    --font-family-heading: 'Arial', sans-serif;                         /* Font family for headings */
+    --font-family-monospace: 'Courier New', monospace;                  /* Monospace font family */
+	--font-family-montserrat: 'Montserrat', sans-serif;
+	
+	 /* Primary font families */
+    --font-primary-sans-serif: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --font-primary-serif: 'Merriweather', 'Times New Roman', serif;
+	--font-family-playfair: 'Playfair Display', serif;
+    --font-primary-monospace: 'Source Code Pro', 'Courier New', monospace;
+
+    /* Secondary font families */
+    --font-secondary-sans-serif: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    --font-secondary-serif: 'Georgia', serif;
+
+
+    /* Special-purpose font families */
+    --font-branding: 'Futura', 'Trebuchet MS', sans-serif; /* Good for logos and headings */
+    --font-readable: 'Lato', 'Arial', sans-serif; /* Highly legible for long texts */
+
+	 /* Base font size for mobile views */
+    --font-size-paragraph: 1rem; /* Typically 16px if the browser default is 16px */
+
+    /* Font sizes for different contexts or screen sizes */
+    --font-size-paragraph-small: 0.875rem; /* Smaller text, about 14px */
+    --font-size-paragraph-large: 1.125rem; /* Larger text, about 18px */
+
+    /* Responsive font sizes */
+    --font-size-paragraph-responsive: calc(1rem + 0.5vw); /* Adjusts with viewport width */
+	
+	 /* Standard font weights */
+    --font-weight-light: 300; /* Light weight for subtle emphasis */
+    --font-weight-normal: 400; /* Normal weight for body text */
+    --font-weight-medium: 500; /* Medium weight for slight emphasis */
+    --font-weight-semibold: 600; /* Semi-bold weight for strong emphasis */
+    --font-weight-bold: 700; /* Bold weight for headers and standout text */
+    --font-weight-extra-bold: 800; /* Extra bold weight for added impact */
+    --font-weight-black: 900; /* Maximum weight for maximum impact */
+
+    /* Optional: specific naming for clarity in context */
+    --font-weight-body: 400; /* Designate a default body text weight */
+    --font-weight-heading: 700; /* Default for headings */
+    --font-weight-link: 600; /* Slightly bolder for link text to stand out */
+    --font-weight-button: 700; /* Bold for buttons to enhance readability */
+	
+	/* letter-spacing */
+	--letter-spacing-tight: -0.05em; /* Tight letter spacing, good for headings in uppercase */
+    --letter-spacing-normal: 0em;    /* Normal letter spacing, default for body text */
+    --letter-spacing-wide: 0.1em;    /* Wide letter spacing, useful for small text or uppercase */
+    --letter-spacing-wider: 0.2em;   /* Wider spacing, can be used for artistic titles or decorative text */
+    --letter-spacing-widest: 0.3em;  /* Widest spacing, good for very specific design needs or very large display text */
+	
+	/* margins top or bottom or all sides */
+	--margin-xxs: 0.25rem;  /* Extra extra small margin (4px if base font-size is 16px) */
+    --margin-xs: 0.5rem;    /* Extra small margin (8px if base font-size is 16px) */
+    --margin-sm: 0.75rem;   /* Small margin (12px if base font-size is 16px) */
+    --margin-md: 1rem;      /* Medium margin (16px if base font-size is 16px) */
+    --margin-lg: 1.5rem;    /* Large margin (24px if base font-size is 16px) */
+    --margin-xl: 2rem;      /* Extra large margin (32px if base font-size is 16px) */
+    --margin-xxl: 3rem;     /* Extra extra large margin (48px if base font-size is 16px) */	
+	
+	/* padding top or bottom or all sides */
+	--padding-xxs: 0.25rem;  /* Extra extra small padding (4px if base font-size is 16px) */
+    --padding-xs: 0.5rem;    /* Extra small padding (8px if base font-size is 16px) */
+    --padding-sm: 0.75rem;   /* Small padding (12px if base font-size is 16px) */
+    --padding-md: 1rem;      /* Medium padding (16px if base font-size is 16px) */
+    --padding-lg: 1.5rem;    /* Large padding (24px if base font-size is 16px) */
+    --padding-xl: 2rem;      /* Extra large padding (32px if base font-size is 16px) */
+    --padding-xxl: 3rem;     /* Extra extra large padding (48px if base font-size is 16px) */
+	
+	/* Width and height percentages */
+    --width-full: 100%;
+    --width-half: 50%;
+    --width-third: 33.333%;
+    --width-quarter: 25%;
+
+    /* Padding and margin percentages (based on parent's width) */
+    --padding-small: 5%;
+    --padding-medium: 10%;
+    --padding-large: 15%;
+
+    --margin-small: 5%;
+    --margin-medium: 10%;
+    --margin-large: 15%;
+
+    /* For responsive adjustments */
+    --section-margin: 2%;
+    --section-padding: 3%;
+}

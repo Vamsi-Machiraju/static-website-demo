@@ -1,0 +1,66 @@
+.top-hd-flex-con{
+display:flex;
+flex-direction:row;
+align-items:center;
+height:12vh;
+min-height: 60px;
+max-height: 100px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+z-index: 1000;
+}
+
+.top-hd-part1{
+display:flex;
+align-items:center; /* Vertically centers content within each section */
+justify-content:flex-start;	
+width:35%; /* Adjust as needed */
+}
+
+.top-hd-part1-1{
+display:flex;
+align-items:center; /* Vertically centers content within each section */
+justify-content:flex-start;	
+width:25%; /* Adjust as needed */
+}
+
+.top-hd-part1-2{
+display:flex;
+align-items:center; /* Vertically centers content within each section */
+justify-content:flex-start;	
+width:75%; /* Adjust as needed */
+}
+
+.top-hd-part1-2 img {
+width: 100%; /* makes the image responsive within its container */
+max-width: 180px; /* maximum size */
+height: auto; /* maintain aspect ratio */
+}
+
+.top-hd-part2{
+display:flex;
+align-items:center; 
+justify-content:flex-start;
+width:35%; /* Adjust as needed */
+gap:var(--padding-lg);
+}
+
+.top-hd-part3{
+display:flex;
+align-items:center; 
+justify-content:flex-start;
+width:30%; /* Adjust as needed */
+gap:var(--padding-lg);
+}
+
+.top-hd-flex-con a{
+text-decoration: none;
+color: var(--strong-blue);
+font-size: 16px;
+font-weight: 700;
+}
+
+.top-hd-flex-con a:hover{
+text-decoration: none;
+color: var(--hover-links-for-black);
+font-weight: var(--font-weight-bold); 
+}

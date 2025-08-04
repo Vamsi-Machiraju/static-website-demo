@@ -1,0 +1,39 @@
+/* Base Styles */
+body {
+    background-color: #fcfcfc; /* off-white */
+    color: #333; /* Dark grey text for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable typeface */
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+a {
+    color: #007bff; /* Bootstrap's default blue for links */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better user interaction */
+}
+
+/* Ensure that images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-top: 0.2rem;
+    font-family: 'Arial', sans-serif; /* Slightly different font for headings */
+}
+
+h1 {
+    font-size: 2rem; /* Larger font size for main titles */
+}
+
+p {
+    margin-bottom: 0.2rem;
+}

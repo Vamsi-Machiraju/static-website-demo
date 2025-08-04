@@ -1,0 +1,90 @@
+/* Work With Us Section */
+.work-section {
+    background: #3B3B3B;
+    color: white;
+    padding: 30px 10%;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+}
+
+/* Section Heading (Work With Us) */
+.work-section-heading {
+	font-size: 2.5rem;
+	text-align: center;
+	color: #00D4C0;
+	font-weight: 600;
+}
+
+/* Work Content */
+.work-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Work Description */
+.work-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Subheading */
+.work-text h3 {
+    font-size: 2rem;
+    color: #00D4C0;
+	font-weight: 600;
+}
+
+/* Features List */
+.work-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.work-features li {
+    font-size: 1.1em;
+    color: var(--white-opacity-70);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Call to Action Button */
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #00D4C0;
+    color: #121212;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+    background: #007770;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .work-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .work-text {
+        text-align: center;
+    }
+
+    .work-features {
+        text-align: left;
+    }
+}

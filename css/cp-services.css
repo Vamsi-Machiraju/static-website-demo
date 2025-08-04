@@ -1,0 +1,74 @@
+/* Services Section */
+.services-section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+	color: var(--strong-blue);
+    font-weight: 700;
+}
+
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Exactly 2 cards per row */
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Service Card */
+.service-card {
+    background: #3B3B3B;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Glowing Hover Effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 255, 255, 0.2);
+}
+
+/* Service Icon */
+.service-icon {
+    font-size: 50px;
+    color: cyan;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Service Title */
+.service-title {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #00E0E0;
+}
+
+/* Service Description */
+.service-description ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.service-description li {
+    font-size: 1.1em;
+	color: var(--white-opacity-70);
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+}
